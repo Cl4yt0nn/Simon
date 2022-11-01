@@ -48,7 +48,6 @@ function picked(c) {
             counter++;
             document.getElementById(c).classList.add("pulse");
             setTimeout(noMorePulseClass,400);
-            console.log("right")
         } else {
             endGame();
         }
@@ -61,7 +60,6 @@ function picked(c) {
 function SafetyDelay() {
     if (animRunning == false) {
         newColor();
-        console.log("new")
     }
 }
 
