@@ -13,7 +13,8 @@ body {
     border-radius:50%;
     border:5px solid black;
     background:black;
-    margin-left:25vw;
+    margin-left:45vw;
+    margin-top:2vw;
     animation:startUpSpin 4s ease-in-out;
     animation-fill-mode:forwards;
 }
@@ -53,39 +54,14 @@ body {
     z-index:3;
     position:absolute;
     border-radius:50%;
-    left:calc(40vw + 12.5px);
-    top:calc(15vw + 12.5px);
+    left:calc(60.1vw + 12.5px);
+    top:calc(16.5vw + 12.5px);
     color:white;
     display:flex;
     justify-content:center;
     align-items:center;
     font-size:5vw;
     box-shadow:0px 0px 20px black;
-    animation:upsideDown 4s forwards ease-in-out;
-}
-.right {
-    animation:slideRight 3s ease-in-out forwards;
-    animation-delay:2s;
-}
-
-@keyframes startUpSpin {
-    0% {rotate:-720deg}
-    50% {rotate:0deg; margin-left:25vw; border-radius:50%}
-    100% {margin-left:45vw}
-}
-@keyframes upsideDown {
-    0% {rotate:-180deg; width:55vw; height:55vw; left:22.5vw; top:-2.5vw; font-size:12vw}
-    50% {rotate:-360deg; left:32.5vw; top:7.5vw;}
-    100% {left:calc(60vw + 12.5px); top:calc(15vw + 12.5px); rotate:0deg}
-}
-/*@keyframes changeColor {
-    0% {background:#000000}
-    20% {background:#000000}
-    100% {background:linear-gradient(to bottom right, #292850, #292850)}
-}*/
-@keyframes slideRight {
-    0% {}
-    100% {margin-left:32.5vw}
 }
 
 .pulse {
@@ -140,16 +116,6 @@ h1 {
     cursor:pointer;
     background:#26973d;
     transition:0.2s;
-}
-.fadein {
-    animation:fadein 5s forwards linear;
-    opacity:0%;
-    z-index:-2;
-}
-@keyframes fadein {
-    0% {opacity:0%}
-    50% {opacity:0%}
-    100% {opacity:100%}
 }
 .flash {
     animation:wrongFlash 3s forwards linear;
