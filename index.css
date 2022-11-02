@@ -2,8 +2,19 @@
     font-family:'Kanit',sans-serif;
 }
 body {
-    /*animation:changeColor 2.5s forwards ease-in-out;*/
-    background:#292850;
+	background: linear-gradient(-45deg, #983939, #8d4295, #292850, #1c6580);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite alternate;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
 }
 #gameboard {
     display:grid;
